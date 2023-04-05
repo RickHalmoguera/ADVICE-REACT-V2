@@ -102,6 +102,8 @@ The "handleClick" function is used to fetch new data from the same "GetAdvice" f
 
 If the "advice" state is null or undefined, the component will return a loading screen UI with a dice image. Once the advice state has been set, the component will display the advice along with its ID.
 
+All class names were assigned using the BEM methodology, which makes them more easily understandable.
+
 ### advice.js 
 
 ```js
