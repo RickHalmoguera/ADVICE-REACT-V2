@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap');
+
+$font-family: 'Manrope', sans-serif;
+
+$lightCyan:hsl(193, 38%, 86%);
+$neonGreen: hsl(150, 100%, 66%);
+$grayishBlue: hsl(217, 19%, 38%);
+$darkGrayishBlue: hsl(217, 19%, 24%);
+$darkBlue: hsl(218, 23%, 16%);
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: $font-family;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+}
+
+body{
+    background: $darkBlue;
+    height: 100svh;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    position: relative;
+    background: $darkGrayishBlue;
+    min-width: 343px;
+    max-width: 540px;
+    min-height: 346px;
+    padding: 1em;
+    border-radius: 1em;
+    display: grid;
+    grid-template-rows: .5fr 2fr 1fr;
+    justify-items: center;
+
+    &__title{
+        color: $neonGreen;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &__text{
+        align-self:center;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: $lightCyan;
+    }
+
+    &__btn{
+        cursor: pointer;
+        position: absolute;
+        bottom: -2em;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: $neonGreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &:hover{
+            filter: drop-shadow(0px 0px 10px hsl(150, 100%, 66%));
+        }
+    }
+
+}
